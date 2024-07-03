@@ -1,6 +1,13 @@
 <?php
 
+session_start();
+
+
+
+
 $error_message="";
+
+
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -32,12 +39,18 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     
 
     if (mysqli_num_rows($check_uname) === 1 && mysqli_num_rows($check_email) === 1 && mysqli_num_rows($check_pswd) === 1) {
+        $_SESSION["uname"] = $uname;
+        $_SESSION["email"] = $email;
+        $_SESSION["pswd"] = $pswd;
+
         header("Location: main.php");
     } else {
         $error_message = "Input does not match, try again!";
     }
 
 }
+
+
 
 
 ?>
