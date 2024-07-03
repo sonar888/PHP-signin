@@ -120,6 +120,9 @@ if($_SERVER["REQUEST_METHOD"]=== "POST") {
 
         <p> <?= $error_message ?></p>
     </form>
+
+
+    <p> Already a user? Try to <a href ="login.php">login</a> </p>
   </body>
 
   <footer>

@@ -91,6 +91,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <button> Send </button>
     </form>
+
+    <p> Not a user yet?  <a href ="sign-up.php">Sign-up</a> instead</p>
   </body>
 
   <footer>
