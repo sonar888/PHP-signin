@@ -12,10 +12,10 @@ $error_message="";
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
-    $db_hostname = "localhost";
-    $db_username = "root";
+    $db_hostname = "";
+    $db_username = "";
     $db_password = "";
-    $db_name = "usersdb";
+    $db_name = "";
 
    
 

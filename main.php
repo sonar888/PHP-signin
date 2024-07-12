@@ -30,10 +30,10 @@ $pswd = $_SESSION["pswd"];
 
 //Connect to the DB
 
-$db_hostname = "localhost";
-$db_username = "root";
+$db_hostname = "";
+$db_username = "";
 $db_password = "";
-$db_name = "usersdb";
+$db_name = "";
 
    
 
